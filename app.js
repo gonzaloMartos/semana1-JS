@@ -55,18 +55,20 @@ esCovid(sintomasPacienteNoEnfermo, sintomasCovid19);
 
 
 //Horario cursada (En esta tambien me ayude con chat gpt)
-function horarioCursada(materia){
+function horarioCursada(materia) {
     const materias = {
-        "MATEMÁTICA": "JUEVES",
-        "LENGUA": "LUNES",
-        "GEOGRAFÍA": "VIERNES"
+        "MATEMATICA": "Jueves",
+        "LENGUA": "Lunes",
+        "GEOGRAFIA": "Viernes"
     }
-    if(materias.has0wnProperty(materia.toUpperCase())){
-        return materias[materia.toUpperCase()];
-    }else{
-        return "Materia no encontrada";
+    if (materias.hasOwnProperty(materia.toUpperCase())) {
+      return materias[materia.toUpperCase()];
+    } else {
+        return "MATERIA NO ENCONTRADA";
     }
 }
 
-horarioCursada("Matematica");
-horarioCursada("Física");
+horarioCursada("Matematica")
+horarioCursada("Lengua")
+horarioCursada("Geografia")
+horarioCursada("Física")
